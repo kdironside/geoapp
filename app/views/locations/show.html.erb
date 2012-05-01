@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @location.name %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @location.address %>
+</p>
+
+<%#= gmaps4rails(@json) %>
+
+<%= gmaps(
+	:markers => { :data => @json },
+	:map_options => { :auto_adjust => true, # :auto_adjust map to center on location
+			  :auto_zoom => false, 	# :auto_zoom defaults to full zoom in, set to false to utilize :zoom
+			  :zoom => 15 }		# :zoom 0 is fully zoomed out (world view), 21 is fully zoomed in (street view)
+) %>
+
+
+
+<%= link_to 'Edit', edit_location_path(@location) %> |
+<%= link_to 'Back', locations_path %>

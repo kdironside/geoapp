@@ -1,0 +1,10 @@
+
+This sample demonstrates how to include Google Maps in a Rails app. It uses the Google-Maps-for-Rails gem, otherwise known as "gmaps4rails".
+
+This is a Rails 3.2.3 application that uses Ruby 1.9.3 and was developed on Mac Lion OS X. This app also utilizes a local MySQL database (gem "mysql2") instead of the default rails development database, SQLite3.
+
+On the database side of things, if you're interested in a nice interface to view/edit/destroy data in your MySQL, PostgreSQL, or SQLite tables without navigating through the Rails console, think about trying db_Explorer. This simple Rails app is set up using PostgreSQL locally and makes viewing, editing, and destroying easy.
+
+Also, the ruby gem, Lunchy is a great little app that makes launching PostgreSQL and MySQL a snap. So instead of, "pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start", you type, "lunchy start postgres". Other examples include, "lunchy stop mongo", "lunchy status mysql", or just "lunchy status" to see all agents. (Agents are background programs for a particular user). See the lunchy doc for a bunch of sweet options.
+
+Enough said, this Google Map app is a work-in-progress. Additional functionality is in the pipeline.
